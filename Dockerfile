@@ -5,8 +5,7 @@ USER root
 
 # Install PostgreSQL client and PHP PostgreSQL extension
 RUN apt-get update && \
-    apt-get install -y libpq-dev postgresql-client && \
-    docker-php-ext-install pdo_pgsql pgsql && \
+    apt-get install -y libpq-dev postgresql-client php-pgsql php-pdo && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
