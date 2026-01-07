@@ -3,5 +3,3 @@ builder = "DOCKERFILE"
 
 [deploy]
 startCommand = ""
-healthcheckPath = "/"
-healthcheckTimeout = 100
